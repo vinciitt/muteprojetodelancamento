@@ -388,44 +388,46 @@ const Index = () => {
               Por que <span className="text-gradient-vibrant">DEAF</span>?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              Um nome curto, simbólico e cheio de significado — escolhido para representar tudo que o app quer ser
-              para a comunidade surda e ouvinte.
+              "Deaf" significa <span className="text-foreground font-semibold">surdo</span> em inglês — mas dentro
+              da comunidade surda, a palavra carrega muito mais do que uma tradução. Ela representa
+              <span className="text-foreground font-semibold"> identidade, cultura e orgulho</span>.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
               <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
-                <Sparkles className="text-primary-foreground" size={22} />
-              </div>
-              <h3 className="font-display text-xl font-bold mb-3">Voz que se propaga</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Um eco é uma voz que viaja, atravessa barreiras e chega ao outro lado.
-                É exatamente isso que o app faz: leva a fala de quem ouve até quem sinaliza,
-                e os sinais de quem é surdo até quem fala.
-              </p>
-            </div>
-
-            <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
                 <HandHeart className="text-primary-foreground" size={22} />
               </div>
-              <h3 className="font-display text-xl font-bold mb-3">Resposta da comunidade</h3>
+              <h3 className="font-display text-xl font-bold mb-3">Identidade, não deficiência</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Deaf também é resposta — é o sinal que volta, é a conversa que acontece nos dois sentidos.
-                O DEAF foi feito <span className="text-foreground font-semibold">com</span> a comunidade surda,
-                não apenas <span className="text-foreground font-semibold">para</span> ela.
+                Quando escrita com "D" maiúsculo (<span className="text-foreground font-semibold">Deaf</span>),
+                a palavra deixa de descrever uma condição auditiva e passa a representar um povo:
+                pessoas que compartilham uma língua de sinais, uma história e uma cultura própria.
               </p>
             </div>
 
             <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
               <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
-                <Globe2 className="text-primary-foreground" size={22} />
+                <Sparkles className="text-primary-foreground" size={22} />
               </div>
-              <h3 className="font-display text-xl font-bold mb-3">Curto, global e acessível</h3>
+              <h3 className="font-display text-xl font-bold mb-3">Orgulho surdo (Deaf Pride)</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Três letras fáceis de lembrar, fáceis de pronunciar e que funcionam em qualquer idioma.
-                Acessibilidade começa no nome — simples, claro e direto, como a comunicação deve ser.
+                O movimento <span className="text-foreground font-semibold">Deaf Pride</span> celebra ser surdo
+                como algo positivo. Inspirou a Lei de Libras no Brasil (10.436/2002) e a luta por escolas
+                bilíngues, intérpretes e acessibilidade real.
+              </p>
+            </div>
+
+            <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
+                <Users className="text-primary-foreground" size={22} />
+              </div>
+              <h3 className="font-display text-xl font-bold mb-3">Símbolo global</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                "Deaf" é reconhecida no mundo inteiro como bandeira da comunidade surda.
+                Usar esse nome é honrar uma luta internacional por respeito, língua e pertencimento —
+                e dizer claramente: este app é da comunidade surda.
               </p>
             </div>
           </div>
@@ -435,11 +437,12 @@ const Index = () => {
               <Heart size={14} /> O significado
             </div>
             <p className="font-display text-2xl md:text-3xl leading-snug max-w-3xl mx-auto">
-              "Toda fala merece um <span className="text-gradient-vibrant">eco</span>.
-              Todo sinal merece uma resposta."
+              "Ser <span className="text-gradient-vibrant">Deaf</span> não é o que falta.
+              É o que <span className="text-gradient-vibrant">existe</span>: língua, cultura e comunidade."
             </p>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              DEAF é a ponte invisível que faz a comunicação ir e voltar — sem barreiras, sem silêncio, sem distância.
+              O nome DEAF foi escolhido para colocar a comunidade surda no centro — como protagonista,
+              não como exceção. Acessibilidade começa pelo respeito à identidade.
             </p>
           </div>
         </div>
