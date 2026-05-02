@@ -1,74 +1,93 @@
 import { useEffect, useState } from "react";
 import {
-  Github,
   Sparkles,
   MessageCircle,
   BookOpen,
   PhoneCall,
-  Moon,
-  ShieldCheck,
-  Smartphone,
+  Heart,
+  Users,
+  Ear,
   ArrowRight,
-  Download,
+  Bell,
   Hand,
   Zap,
-  Code2,
   Globe2,
   Play,
   ChevronRight,
+  Rocket,
+  HandHeart,
+  Eye,
+  Languages,
+  Mail,
+  CalendarClock,
 } from "lucide-react";
 import muteIcon from "@/assets/mute-icon.png";
 
 const features = [
   {
     icon: MessageCircle,
-    title: "Chat Acessível",
-    desc: "Frases rápidas pré-configuradas, indicador de digitação e respostas automáticas para comunicação instantânea.",
+    title: "Chat que todos entendem",
+    desc: "Converse por texto com frases rápidas em Libras e português, indicador visual de digitação e respostas prontas para o dia a dia.",
     tint: "from-primary/20 to-primary-glow/10",
   },
   {
     icon: BookOpen,
-    title: "Aulas de Libras",
-    desc: "6 módulos interativos e gratuitos, do alfabeto às situações do dia a dia, com progresso salvo.",
+    title: "Aprenda Libras de verdade",
+    desc: "Ouvintes aprendem a Língua Brasileira de Sinais em 6 módulos didáticos — do alfabeto a conversas completas, com vídeos e progresso salvo.",
     tint: "from-secondary/20 to-secondary/5",
   },
   {
     icon: PhoneCall,
-    title: "Chamada Inclusiva",
-    desc: "Legenda animada em tempo real e janela flutuante de Libras durante toda a chamada.",
+    title: "Chamadas com legenda ao vivo",
+    desc: "Surdos e ouvintes na mesma ligação: legenda automática em tempo real e janela flutuante com intérprete de Libras.",
     tint: "from-accent/20 to-accent/5",
   },
   {
-    icon: Moon,
-    title: "Dark & Light",
-    desc: "Sistema completo de temas com paleta cuidadosamente projetada para reduzir fadiga visual.",
+    icon: Eye,
+    title: "Acessibilidade visual real",
+    desc: "Alto contraste, tipografia legível, alertas visuais e haptic feedback — pensado com e para a comunidade surda.",
     tint: "from-primary/20 to-primary-glow/10",
   },
   {
-    icon: ShieldCheck,
-    title: "TypeScript Strict",
-    desc: "Tipagem completa, hooks customizados e arquitetura modular para fácil manutenção e extensão.",
+    icon: Languages,
+    title: "Tradução instantânea",
+    desc: "Traduza voz em texto e texto em sinais com a câmera. Quebre a barreira da comunicação em qualquer lugar.",
     tint: "from-secondary/20 to-secondary/5",
   },
   {
-    icon: Smartphone,
-    title: "iOS + Android",
-    desc: "Compatível com os dois sistemas com SafeArea, KeyboardAvoiding e comportamentos nativos corretos.",
+    icon: Users,
+    title: "Comunidade conectada",
+    desc: "Encontre intérpretes, eventos e amigos. Surdos e ouvintes juntos, construindo pontes em vez de muros.",
     tint: "from-accent/20 to-accent/5",
   },
 ];
 
-const stack = [
-  "React Native 0.74", "Expo SDK 51", "TypeScript 5.3", "React Navigation 6",
-  "Reanimated 3", "Gesture Handler", "Linear Gradient", "Expo Haptics",
-  "SafeArea Context", "Custom Hooks",
+const pillars = [
+  {
+    icon: Ear,
+    label: "Para surdos",
+    title: "Sua voz, do seu jeito",
+    desc: "Comunique-se em Libras ou texto sem depender de ninguém. O MUTE coloca a autonomia nas suas mãos — literalmente.",
+  },
+  {
+    icon: HandHeart,
+    label: "Para ouvintes",
+    title: "Aprenda e conecte-se",
+    desc: "Aulas didáticas de Libras e ferramentas de tradução para conversar com colegas, familiares e amigos surdos sem barreiras.",
+  },
+  {
+    icon: Heart,
+    label: "Para todos",
+    title: "Inclusão de verdade",
+    desc: "Um espaço onde a comunicação acontece nos dois sentidos. Porque acessibilidade não é favor, é direito.",
+  },
 ];
 
 const stats = [
   { num: "10M+", label: "Surdos no Brasil" },
-  { num: "100%", label: "Open source" },
-  { num: "6", label: "Módulos de Libras" },
-  { num: "2", label: "Plataformas" },
+  { num: "1 em 4", label: "Brasileiros com alguma deficiência auditiva" },
+  { num: "70%", label: "Têm dificuldade de comunicação no dia a dia" },
+  { num: "100%", label: "Gratuito para sempre" },
 ];
 
 const Index = () => {
