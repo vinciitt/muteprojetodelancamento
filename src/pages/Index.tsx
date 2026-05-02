@@ -159,8 +159,8 @@ const Index = () => {
           <div className="text-center lg:text-left animate-fade-up">
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-semibold text-primary-glow mb-7">
               <Sparkles size={14} className="animate-pulse" />
-              Open source · React Native + Expo
-              <span className="ml-1 px-2 py-0.5 rounded-full bg-primary/30 text-[10px]">v1.0</span>
+              Lançamento oficial · em breve nas lojas
+              <span className="ml-1 px-2 py-0.5 rounded-full bg-primary/30 text-[10px]">2026</span>
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[88px] font-extrabold leading-[1.02] mb-6">
@@ -172,34 +172,33 @@ const Index = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-              App mobile acessível para surdos e ouvintes se comunicarem com{" "}
-              <span className="text-foreground font-semibold">chat rápido</span>, aulas de{" "}
-              <span className="text-foreground font-semibold">Libras</span> e chamadas com{" "}
-              <span className="text-foreground font-semibold">legenda em tempo real</span>.
+              O MUTE é o app que conecta{" "}
+              <span className="text-foreground font-semibold">surdos e ouvintes</span> em uma só conversa.
+              Aprenda Libras, traduza em tempo real e se comunique de verdade — porque ninguém deveria ficar de fora.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
               <a
-                href="https://github.com"
+                href="#cta"
                 className="group inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-7 py-4 rounded-2xl font-semibold shadow-elegant hover:shadow-glow-lg hover:scale-[1.03] transition-spring"
               >
-                <Download size={18} />
-                Ver código no GitHub
+                <Bell size={18} />
+                Quero ser avisado no lançamento
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-smooth" />
               </a>
               <a
-                href="#features"
+                href="#proposta"
                 className="inline-flex items-center gap-2 glass px-7 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth"
               >
-                <Play size={16} /> Explorar funcionalidades
+                <Play size={16} /> Conheça a proposta
               </a>
             </div>
 
             {/* mini stats */}
             <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm">
               {[
-                { icon: Zap, label: "Setup em 3 passos" },
-                { icon: Code2, label: "TypeScript strict" },
+                { icon: HandHeart, label: "Feito com a comunidade surda" },
+                { icon: Heart, label: "Gratuito para sempre" },
                 { icon: Globe2, label: "iOS + Android" },
               ].map((s) => (
                 <div key={s.label} className="flex items-center gap-2 text-muted-foreground">
