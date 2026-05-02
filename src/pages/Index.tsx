@@ -461,9 +461,9 @@ const Index = () => {
             </div>
           </div>
 
-          {/* DEMO da chamada com avatar */}
+          {/* DEMO da videochamada surdo ↔ ouvinte com avatar PiP */}
           <div className="relative">
-            <div className="absolute -inset-8 bg-gradient-vibrant opacity-20 blur-3xl rounded-full" />
+            <div className="absolute -inset-8 bg-gradient-vibrant opacity-25 blur-3xl rounded-full" />
             <div className="relative glass rounded-3xl p-5 shadow-elegant">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
@@ -471,48 +471,78 @@ const Index = () => {
                   <span className="text-xs font-bold uppercase tracking-wider">Ao vivo · 02:34</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <PhoneCall size={12} /> Chamada acessível
+                  <PhoneCall size={12} /> Videochamada acessível
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-3 mb-3">
-                {/* ouvinte */}
-                <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-secondary/30 to-secondary/5 border border-border relative overflow-hidden flex items-end p-3">
-                  <div className="absolute top-2 left-2 text-[10px] font-bold bg-background/80 px-2 py-0.5 rounded-full">Ouvinte</div>
-                  <div className="w-full h-full absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-gradient-primary flex items-center justify-center text-3xl">🧑‍💼</div>
-                  </div>
-                  <div className="relative w-full glass rounded-xl px-2.5 py-1.5 text-[10px] flex items-center gap-1.5">
-                    <Mic size={10} className="text-secondary" /> Falando…
+              {/* Tela principal: ouvinte em destaque + miniatura do surdo + AVATAR PiP no canto */}
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-secondary/25 via-background to-primary/15 mb-3">
+                {/* Ouvinte (vídeo principal) */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-secondary to-secondary/60 flex items-center justify-center text-6xl shadow-glow mb-3">
+                      🧑‍💼
+                    </div>
+                    <div className="inline-flex items-center gap-1.5 glass rounded-full px-3 py-1 text-[11px] font-semibold">
+                      <Mic size={11} className="text-secondary animate-pulse" /> Lucas (ouvinte) · falando
+                    </div>
                   </div>
                 </div>
-                {/* avatar Libras */}
-                <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-primary/30 to-accent/10 border-2 border-primary/40 relative overflow-hidden flex items-end p-3 shadow-glow">
-                  <div className="absolute top-2 left-2 text-[10px] font-bold bg-primary/80 text-primary-foreground px-2 py-0.5 rounded-full">Avatar Libras</div>
-                  <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-glow animate-ping-slow" />
-                  <div className="w-full h-full absolute inset-0 flex items-center justify-center">
-                    <div className="text-7xl animate-float">🤟</div>
+
+                {/* Miniatura do surdo (canto superior direito) */}
+                <div className="absolute top-3 right-3 w-20 h-28 rounded-xl border-2 border-primary/40 bg-gradient-to-br from-primary/30 to-accent/10 overflow-hidden shadow-glow">
+                  <div className="absolute inset-0 flex items-center justify-center text-3xl">🧑</div>
+                  <div className="absolute bottom-1 left-1 right-1 text-[8px] font-bold bg-background/80 text-center rounded px-1 py-0.5">
+                    Marina (surda)
                   </div>
-                  <div className="relative w-full glass rounded-xl px-2.5 py-1.5 text-[10px] flex items-center gap-1.5">
-                    <Hand size={10} className="text-primary-glow" /> Sinalizando
+                </div>
+
+                {/* AVATAR Libras — janela PiP no canto inferior esquerdo */}
+                <div className="absolute bottom-3 left-3 w-28 h-36 rounded-xl border-2 border-primary bg-gradient-to-br from-primary/40 to-accent/20 overflow-hidden shadow-glow animate-pulse-glow">
+                  <div className="absolute top-1.5 left-1.5 right-1.5 flex items-center justify-between">
+                    <span className="text-[8px] font-bold bg-primary text-primary-foreground px-1.5 py-0.5 rounded">AVATAR</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-glow animate-ping-slow" />
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center pt-3">
+                    <div className="text-5xl animate-float">🤟</div>
+                  </div>
+                  <div className="absolute bottom-1 left-1 right-1 text-[8px] font-bold text-center bg-background/80 rounded px-1 py-0.5 flex items-center justify-center gap-1">
+                    <Hand size={8} className="text-primary-glow" /> Sinalizando
+                  </div>
+                </div>
+
+                {/* Legenda sobreposta */}
+                <div className="absolute left-3 right-3 bottom-3 ml-32 glass rounded-xl px-3 py-2">
+                  <div className="text-[9px] uppercase tracking-wider text-primary-glow font-bold mb-0.5 flex items-center gap-1.5">
+                    <Subtitles size={10} /> Tradução em tempo real
+                  </div>
+                  <div className="text-[11px] leading-snug font-medium">
+                    "Marquei a consulta para terça às 14h. Tudo bem?"
                   </div>
                 </div>
               </div>
 
-              {/* legenda */}
-              <div className="rounded-2xl p-4 bg-gradient-card border border-primary/30">
-                <div className="text-[10px] uppercase tracking-wider text-primary-glow font-bold mb-1.5 flex items-center gap-2">
-                  <Subtitles size={12} /> Tradução em tempo real
-                </div>
-                <div className="text-sm leading-relaxed font-medium">
-                  "Oi! Marquei a consulta para terça às 14h. Tudo bem para você?"
-                </div>
-              </div>
-
-              <div className="mt-3 grid grid-cols-4 gap-2">
-                {["🎤", "📷", "🤟", "📞"].map((i, k) => (
-                  <button key={k} className="aspect-square rounded-xl glass hover:bg-primary/20 transition-smooth flex items-center justify-center text-xl">
-                    {i}
+              {/* Controles da chamada */}
+              <div className="grid grid-cols-5 gap-2">
+                {[
+                  { i: "🎤", l: "Mic" },
+                  { i: "📷", l: "Câmera" },
+                  { i: "🤟", l: "Avatar", on: true },
+                  { i: "💬", l: "Legenda", on: true },
+                  { i: "📞", l: "Sair", danger: true },
+                ].map((b, k) => (
+                  <button
+                    key={k}
+                    className={`aspect-square rounded-xl flex flex-col items-center justify-center gap-0.5 transition-smooth ${
+                      b.danger
+                        ? "bg-destructive/20 hover:bg-destructive/30"
+                        : b.on
+                        ? "bg-gradient-primary shadow-glow"
+                        : "glass hover:bg-primary/15"
+                    }`}
+                  >
+                    <span className="text-base">{b.i}</span>
+                    <span className={`text-[8px] font-bold ${b.on ? "text-primary-foreground" : "text-muted-foreground"}`}>{b.l}</span>
                   </button>
                 ))}
               </div>
