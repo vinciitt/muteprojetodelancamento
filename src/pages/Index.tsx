@@ -185,6 +185,7 @@ const Index = () => {
           </a>
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <li><a href="#proposta" className="hover:text-foreground transition-smooth">Proposta</a></li>
+            <li><a href="#nome" className="hover:text-foreground transition-smooth">Por que ECO?</a></li>
             <li><a href="#libras" className="hover:text-foreground transition-smooth">Libras</a></li>
             <li><a href="#avatar" className="hover:text-foreground transition-smooth">Avatar</a></li>
             <li><a href="#curso" className="hover:text-foreground transition-smooth">Curso</a></li>
