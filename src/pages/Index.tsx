@@ -176,16 +176,16 @@ const Index = () => {
           <a href="#" className="flex items-center gap-3">
             <img
               src={muteIcon}
-              alt="Logo ECO — mão sinalizando 'eu te amo' em Libras"
+              alt="Logo DEAF — mão sinalizando 'eu te amo' em Libras"
               width={36}
               height={36}
               className="rounded-lg shadow-glow"
             />
-            <span className="font-display text-xl font-extrabold tracking-[0.3em]">ECO</span>
+            <span className="font-display text-xl font-extrabold tracking-[0.3em]">DEAF</span>
           </a>
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <li><a href="#proposta" className="hover:text-foreground transition-smooth">Proposta</a></li>
-            <li><a href="#nome" className="hover:text-foreground transition-smooth">Por que ECO?</a></li>
+            <li><a href="#nome" className="hover:text-foreground transition-smooth">Por que DEAF?</a></li>
             <li><a href="#libras" className="hover:text-foreground transition-smooth">Libras</a></li>
             <li><a href="#avatar" className="hover:text-foreground transition-smooth">Avatar</a></li>
             <li><a href="#curso" className="hover:text-foreground transition-smooth">Curso</a></li>
@@ -231,7 +231,7 @@ const Index = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-              O ECO conecta <span className="text-foreground font-semibold">surdos e ouvintes</span> em uma só conversa.
+              O DEAF conecta <span className="text-foreground font-semibold">surdos e ouvintes</span> em uma só conversa.
               Avatar tradutor em chamadas, curso de Libras do básico ao avançado, salas de bate-papo
               e aulas com <span className="text-foreground font-semibold">professores surdos</span> — tudo em um só app.
             </p>
@@ -280,7 +280,7 @@ const Index = () => {
                     <div className="flex items-center justify-between pb-3 border-b border-border">
                       <div className="flex items-center gap-2">
                         <img src={muteIcon} alt="" width={20} height={20} className="rounded" />
-                        <span className="font-display text-xs tracking-[0.2em] font-extrabold text-gradient">ECO</span>
+                        <span className="font-display text-xs tracking-[0.2em] font-extrabold text-gradient">DEAF</span>
                       </div>
                       <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-primary/25 text-primary-glow">BETA</span>
                     </div>
@@ -379,13 +379,13 @@ const Index = () => {
         </div>
       </header>
 
-      {/* POR QUE ECO? */}
+      {/* POR QUE DEAF? */}
       <section id="nome" className="relative py-28 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">A história do nome</div>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
-              Por que <span className="text-gradient-vibrant">ECO</span>?
+              Por que <span className="text-gradient-vibrant">DEAF</span>?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
               Um nome curto, simbólico e cheio de significado — escolhido para representar tudo que o app quer ser
@@ -412,8 +412,8 @@ const Index = () => {
               </div>
               <h3 className="font-display text-xl font-bold mb-3">Resposta da comunidade</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Eco também é resposta — é o sinal que volta, é a conversa que acontece nos dois sentidos.
-                O ECO foi feito <span className="text-foreground font-semibold">com</span> a comunidade surda,
+                Deaf também é resposta — é o sinal que volta, é a conversa que acontece nos dois sentidos.
+                O DEAF foi feito <span className="text-foreground font-semibold">com</span> a comunidade surda,
                 não apenas <span className="text-foreground font-semibold">para</span> ela.
               </p>
             </div>
@@ -439,7 +439,7 @@ const Index = () => {
               Todo sinal merece uma resposta."
             </p>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              ECO é a ponte invisível que faz a comunicação ir e voltar — sem barreiras, sem silêncio, sem distância.
+              DEAF é a ponte invisível que faz a comunicação ir e voltar — sem barreiras, sem silêncio, sem distância.
             </p>
           </div>
         </div>
@@ -455,7 +455,7 @@ const Index = () => {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
               No Brasil, mais de 10 milhões de pessoas são surdas — mas a maioria dos ouvintes nunca aprendeu Libras.
-              O ECO existe para mudar isso, de forma simples, segura e acessível.
+              O DEAF existe para mudar isso, de forma simples, segura e acessível.
             </p>
           </div>
 
@@ -544,7 +544,7 @@ const Index = () => {
               Avatar em <span className="text-gradient-vibrant">Libras</span> dentro da chamada
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Em toda chamada de áudio ou vídeo, o ECO exibe um avatar 3D que traduz a fala do ouvinte
+              Em toda chamada de áudio ou vídeo, o DEAF exibe um avatar 3D que traduz a fala do ouvinte
               para a Língua Brasileira de Sinais — em tempo real. O surdo entende exatamente o que está sendo
               dito, sem depender de intérprete humano e sem perder o contexto da conversa.
             </p>
@@ -878,7 +878,7 @@ const Index = () => {
               Surdos <span className="text-gradient-vibrant">ensinam</span>, ouvintes <span className="text-gradient">aprendem</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              No ECO, professores surdos e instrutores de Libras podem dar aulas em vídeo online —
+              No DEAF, professores surdos e instrutores de Libras podem dar aulas em vídeo online —
               e <span className="text-foreground font-semibold">cobrar por isso</span>. Uma forma direta
               de gerar renda extra ensinando a sua própria língua para quem quer aprender.
             </p>
@@ -890,7 +890,7 @@ const Index = () => {
               { icon: UserCheck, t: "1. Cadastre-se como professor", d: "Verificação simples. Exclusivo para surdos e instrutores de Libras certificados." },
               { icon: Video, t: "2. Crie suas aulas", d: "Aulas ao vivo (1:1 ou grupo) ou vídeo-aulas gravadas com seu próprio preço." },
               { icon: DollarSign, t: "3. Receba alunos", d: "Ouvintes contratam aulas direto pelo app. Pagamento seguro e protegido." },
-              { icon: TrendingUp, t: "4. Ganhe renda extra", d: "Você define o valor por hora. O ECO cuida do pagamento e repassa para você." },
+              { icon: TrendingUp, t: "4. Ganhe renda extra", d: "Você define o valor por hora. O DEAF cuida do pagamento e repassa para você." },
             ].map((s, i) => (
               <div key={i} className="group glass rounded-2xl p-6 hover:-translate-y-2 hover:border-primary/50 transition-spring shadow-card">
                 <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 shadow-glow group-hover:scale-110 transition-spring">
@@ -949,7 +949,7 @@ const Index = () => {
                   Aulas pagas com proteção total
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  O ECO intermedeia o pagamento: o aluno paga no app, o valor fica protegido e é
+                  O DEAF intermedeia o pagamento: o aluno paga no app, o valor fica protegido e é
                   liberado para o professor após a aula. Sem fraudes, sem calote — e com nota fiscal
                   e relatório de ganhos para o professor acompanhar a renda.
                 </p>
@@ -976,7 +976,7 @@ const Index = () => {
       <section id="features" className="relative py-28 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-16">
-            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Tudo no ECO</div>
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Tudo no DEAF</div>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
               Recursos pensados para <span className="text-gradient">conectar</span>
             </h2>
@@ -1010,7 +1010,7 @@ const Index = () => {
       <section id="publico" className="relative py-28 px-6 bg-gradient-card">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Para quem é o ECO</div>
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Para quem é o DEAF</div>
             <h2 className="font-display text-4xl md:text-5xl font-extrabold">
               Um app, <span className="text-gradient-vibrant">duas pontas</span>, uma conversa
             </h2>
@@ -1043,7 +1043,7 @@ const Index = () => {
               Seus dados, suas <span className="text-gradient-vibrant">conversas</span>, sua proteção
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mt-4">
-              Acessibilidade só faz sentido com confiança. Por isso, segurança é parte da fundação do ECO.
+              Acessibilidade só faz sentido com confiança. Por isso, segurança é parte da fundação do DEAF.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -1071,7 +1071,7 @@ const Index = () => {
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Por que importa</div>
             <h2 className="font-display text-4xl md:text-5xl font-extrabold">
-              Os números por trás do <span className="text-gradient-vibrant">ECO</span>
+              Os números por trás do <span className="text-gradient-vibrant">DEAF</span>
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -1095,7 +1095,7 @@ const Index = () => {
             <CalendarClock size={14} /> Lançamento em breve
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-extrabold mb-5">
-            Seja o primeiro a <span className="text-gradient-vibrant">usar o ECO</span>
+            Seja o primeiro a <span className="text-gradient-vibrant">usar o DEAF</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
             Cadastre seu e-mail e avisamos no dia do lançamento. Acesso antecipado para os primeiros inscritos —
@@ -1160,7 +1160,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img src={muteIcon} alt="" width={28} height={28} className="rounded-lg" />
-            <span className="font-display font-extrabold tracking-[0.3em]">ECO</span>
+            <span className="font-display font-extrabold tracking-[0.3em]">DEAF</span>
           </div>
           <p className="text-sm text-muted-foreground text-center">
             Feito com <span className="text-accent">♥</span> para e com a comunidade surda
