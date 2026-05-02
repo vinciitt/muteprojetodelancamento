@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* MUTE — Deaf Pride turquoise + harmonic blue (HSL)
+    /* ECO — Deaf Pride turquoise + harmonic blue (HSL)
        Turquesa oficial do movimento surdo, equilibrada com azul para mais harmonia */
     --background: 205 55% 6%;
     --foreground: 185 60% 96%;
