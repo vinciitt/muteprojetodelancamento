@@ -517,7 +517,7 @@ const Index = () => {
             <span className="font-display font-extrabold tracking-[0.3em]">MUTE</span>
           </div>
           <p className="text-sm text-muted-foreground text-center">
-            Feito com <span className="text-accent">♥</span> para a comunidade surda · React Native + Expo
+            Feito com <span className="text-accent">♥</span> para e com a comunidade surda
           </p>
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()}</p>
         </div>
