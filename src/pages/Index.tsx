@@ -126,16 +126,16 @@ const Index = () => {
             <span className="font-display text-xl font-extrabold tracking-[0.3em]">MUTE</span>
           </a>
           <ul className="hidden md:flex items-center gap-10 text-sm font-medium text-muted-foreground">
-            <li><a href="#features" className="hover:text-foreground transition-smooth">Funcionalidades</a></li>
-            <li><a href="#how" className="hover:text-foreground transition-smooth">Como funciona</a></li>
-            <li><a href="#tech" className="hover:text-foreground transition-smooth">Stack</a></li>
+            <li><a href="#proposta" className="hover:text-foreground transition-smooth">Proposta</a></li>
+            <li><a href="#features" className="hover:text-foreground transition-smooth">Recursos</a></li>
+            <li><a href="#publico" className="hover:text-foreground transition-smooth">Para quem</a></li>
             <li><a href="#impact" className="hover:text-foreground transition-smooth">Impacto</a></li>
           </ul>
           <a
-            href="https://github.com"
+            href="#cta"
             className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-5 py-2.5 rounded-xl text-sm font-semibold shadow-elegant hover:scale-[1.03] transition-spring"
           >
-            <Github size={16} /> GitHub
+            <Bell size={16} /> Avise-me
           </a>
         </div>
       </nav>
