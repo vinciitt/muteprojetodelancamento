@@ -6,42 +6,43 @@
 
 @layer base {
   :root {
-    /* MUTE — dark-first design tokens (HSL) */
-    --background: 252 35% 5%;
-    --foreground: 250 100% 96%;
+    /* MUTE — Deaf Pride turquoise palette (HSL)
+       Cor oficial do movimento surdo internacional (Deaf Awareness Turquoise) */
+    --background: 190 50% 5%;
+    --foreground: 180 100% 96%;
 
-    --card: 250 40% 10%;
-    --card-foreground: 250 100% 96%;
+    --card: 188 55% 9%;
+    --card-foreground: 180 100% 96%;
 
-    --popover: 250 40% 10%;
-    --popover-foreground: 250 100% 96%;
+    --popover: 188 55% 9%;
+    --popover-foreground: 180 100% 96%;
 
-    --primary: 260 80% 57%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 262 100% 71%;
+    --primary: 178 95% 42%;
+    --primary-foreground: 190 80% 6%;
+    --primary-glow: 174 90% 55%;
 
-    --secondary: 172 100% 38%;
+    --secondary: 192 100% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 322 90% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 165 85% 50%;
+    --accent-foreground: 190 80% 6%;
 
-    --muted: 250 30% 15%;
-    --muted-foreground: 250 20% 70%;
+    --muted: 190 35% 14%;
+    --muted-foreground: 185 25% 72%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 252 30% 20%;
-    --input: 252 30% 20%;
-    --ring: 260 80% 57%;
+    --border: 188 40% 18%;
+    --input: 188 40% 18%;
+    --ring: 178 95% 42%;
 
     --radius: 1rem;
 
     /* Surface tokens */
-    --surface-1: 250 40% 8%;
-    --surface-2: 250 40% 12%;
-    --surface-3: 250 35% 16%;
+    --surface-1: 190 55% 7%;
+    --surface-2: 188 50% 11%;
+    --surface-3: 186 45% 15%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
@@ -65,14 +66,14 @@
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 250 40% 8%;
-    --sidebar-foreground: 250 100% 96%;
-    --sidebar-primary: 260 80% 57%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 250 30% 15%;
-    --sidebar-accent-foreground: 250 100% 96%;
-    --sidebar-border: 252 30% 20%;
-    --sidebar-ring: 260 80% 57%;
+    --sidebar-background: 190 55% 7%;
+    --sidebar-foreground: 180 100% 96%;
+    --sidebar-primary: 178 95% 42%;
+    --sidebar-primary-foreground: 190 80% 6%;
+    --sidebar-accent: 190 35% 14%;
+    --sidebar-accent-foreground: 180 100% 96%;
+    --sidebar-border: 188 40% 18%;
+    --sidebar-ring: 178 95% 42%;
   }
 }
 
