@@ -185,6 +185,7 @@ const Index = () => {
           </a>
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <li><a href="#proposta" className="hover:text-foreground transition-smooth">Proposta</a></li>
+            <li><a href="#libras" className="hover:text-foreground transition-smooth">Libras</a></li>
             <li><a href="#avatar" className="hover:text-foreground transition-smooth">Avatar</a></li>
             <li><a href="#curso" className="hover:text-foreground transition-smooth">Curso</a></li>
             <li><a href="#salas" className="hover:text-foreground transition-smooth">Salas</a></li>
@@ -423,6 +424,46 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* O QUE É LIBRAS */}
+      <section id="libras" className="relative py-28 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Sobre a língua</div>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
+              O que é <span className="text-gradient-vibrant">Libras</span>?
+            </h2>
+          </div>
+
+          <div className="relative overflow-hidden rounded-3xl p-8 md:p-12 glass shadow-card">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/15 to-secondary/10 opacity-60" />
+            <div className="relative space-y-5">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">
+                A <strong className="text-gradient">Libras</strong> (Língua Brasileira de Sinais) é a língua oficial
+                de comunicação da comunidade surda no Brasil, baseada em <strong>movimentos, gestos e expressões faciais</strong>{" "}
+                (visual-espacial).
+              </p>
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">
+                Reconhecida pela <strong className="text-primary-glow">Lei 10.436/2002</strong>, ela possui{" "}
+                <strong>gramática própria</strong> e não é uma simples gestualização do português.
+              </p>
+
+              <div className="grid sm:grid-cols-3 gap-4 pt-4">
+                {[
+                  { t: "Visual-espacial", d: "Movimentos, gestos e expressões faciais" },
+                  { t: "Lei 10.436/2002", d: "Reconhecida oficialmente no Brasil" },
+                  { t: "Gramática própria", d: "Não é o português sinalizado" },
+                ].map((c) => (
+                  <div key={c.t} className="rounded-2xl p-5 bg-background/40 border border-border/50">
+                    <div className="font-display font-bold text-base mb-1">{c.t}</div>
+                    <div className="text-xs text-muted-foreground leading-relaxed">{c.d}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
