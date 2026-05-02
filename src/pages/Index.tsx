@@ -364,55 +364,79 @@ const Index = () => {
         </div>
       </section>
 
-      {/* HOW */}
-      <section id="how" className="relative py-28 px-6 bg-gradient-card">
+      {/* PROPOSTA */}
+      <section id="proposta" className="relative py-28 px-6 bg-gradient-card">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Como funciona</div>
-            <h2 className="font-display text-4xl md:text-5xl font-extrabold">
-              Rodando em <span className="text-gradient">3 passos</span>
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Nossa proposta</div>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
+              Conectar quem <span className="text-gradient">fala</span> com quem <span className="text-gradient-vibrant">sinaliza</span>
             </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+              No Brasil, mais de 10 milhões de pessoas são surdas — mas a maioria dos ouvintes nunca aprendeu Libras.
+              O MUTE existe para mudar isso, de forma simples, gratuita e acessível.
+            </p>
           </div>
 
-          <div className="relative grid md:grid-cols-3 gap-8">
-            <div className="hidden md:block absolute top-8 left-[16%] right-[16%] h-px bg-gradient-to-r from-primary via-accent to-secondary opacity-40" />
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { n: "1", t: "Instale o Expo Go", d: "Baixe o Expo Go na App Store ou Google Play — gratuito, sem conta de desenvolvedor." },
-              { n: "2", t: "Clone & npm install", d: "Rode npm install e depois npx expo start no terminal.", code: "npx expo start" },
-              { n: "3", t: "Escaneie o QR", d: "Abra o Expo Go e escaneie — o app carrega instantaneamente, sem build." },
-            ].map((s) => (
-              <div key={s.n} className="relative text-center">
-                <div className="relative inline-flex w-16 h-16 rounded-full bg-gradient-primary items-center justify-center font-display text-xl font-extrabold text-primary-foreground shadow-glow mb-5 mx-auto animate-pulse-glow">
-                  {s.n}
+              {
+                icon: Eye,
+                t: "O problema",
+                d: "Surdos enfrentam barreiras todos os dias — em hospitais, lojas, escolas e até em casa. Conversar virou um esforço.",
+                tone: "from-destructive/20 to-destructive/5",
+              },
+              {
+                icon: HandHeart,
+                t: "Nossa solução",
+                d: "Um app único que junta chat acessível, aulas de Libras e tradução em tempo real. Tudo em um só lugar.",
+                tone: "from-primary/20 to-primary-glow/10",
+              },
+              {
+                icon: Rocket,
+                t: "O impacto",
+                d: "Surdos com mais autonomia, ouvintes mais conscientes e uma sociedade que finalmente conversa nos dois sentidos.",
+                tone: "from-secondary/20 to-secondary/5",
+              },
+            ].map((p) => (
+              <div key={p.t} className={`group relative overflow-hidden rounded-3xl p-7 glass hover:-translate-y-2 transition-spring shadow-card`}>
+                <div className={`absolute inset-0 bg-gradient-to-br ${p.tone} opacity-50`} />
+                <div className="relative">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
+                    <p.icon size={24} className="text-primary-foreground" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold mb-2">{p.t}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{p.d}</p>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-2">{s.t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-3">{s.d}</p>
-                {s.code && (
-                  <code className="inline-block font-mono text-xs px-3 py-1.5 rounded-lg bg-muted border border-border text-primary-glow">
-                    $ {s.code}
-                  </code>
-                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TECH */}
-      <section id="tech" className="relative py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Stack tecnológico</div>
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-12">
-            Construído com tecnologia <span className="text-gradient">moderna</span>
-          </h2>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {stack.map((t) => (
-              <span
-                key={t}
-                className="glass rounded-xl px-5 py-2.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:border-primary/50 hover:scale-105 transition-spring cursor-default"
-              >
-                {t}
-              </span>
+      {/* PARA QUEM */}
+      <section id="publico" className="relative py-28 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Para quem é o MUTE</div>
+            <h2 className="font-display text-4xl md:text-5xl font-extrabold">
+              Um app, <span className="text-gradient-vibrant">duas pontas</span>, uma conversa
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {pillars.map((p) => (
+              <article key={p.title} className="group relative overflow-hidden rounded-3xl p-8 glass hover:border-primary/50 hover:-translate-y-2 transition-spring shadow-card">
+                <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-gradient-vibrant opacity-10 blur-2xl group-hover:opacity-25 transition-smooth" />
+                <div className="relative">
+                  <div className="text-xs font-bold tracking-[0.25em] text-primary-glow uppercase mb-4">{p.label}</div>
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow group-hover:scale-110 transition-spring">
+                    <p.icon size={24} className="text-primary-foreground" />
+                  </div>
+                  <h3 className="font-display text-2xl font-bold mb-3">{p.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
@@ -422,9 +446,9 @@ const Index = () => {
       <section id="impact" className="relative py-24 px-6 border-y border-border bg-gradient-card">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Impacto social</div>
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">Por que importa</div>
             <h2 className="font-display text-4xl md:text-5xl font-extrabold">
-              Por que o <span className="text-gradient-vibrant">MUTE</span> importa
+              Os números por trás do <span className="text-gradient-vibrant">MUTE</span>
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -438,27 +462,50 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative py-32 px-6 text-center overflow-hidden">
+      {/* CTA — pré-lançamento */}
+      <section id="cta" className="relative py-32 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-vibrant opacity-10 blur-3xl" />
         <div className="absolute inset-0 grid-bg" />
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-2xl mx-auto">
           <img src={muteIcon} alt="" width={80} height={80} className="mx-auto rounded-2xl shadow-glow-lg mb-8 animate-float" />
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-semibold text-primary-glow mb-6">
+            <CalendarClock size={14} /> Lançamento em breve
+          </div>
           <h2 className="font-display text-4xl md:text-6xl font-extrabold mb-5">
-            Pronto para <span className="text-gradient-vibrant">explorar?</span>
+            Seja o primeiro a <span className="text-gradient-vibrant">usar o MUTE</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
-            Código aberto, documentado e pronto para rodar. Veja, contribua ou use como base para seu próprio projeto.
+            Cadastre seu e-mail e avisamos no dia do lançamento. Acesso antecipado para os primeiros inscritos.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://github.com" className="group inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-4 rounded-2xl font-semibold shadow-elegant hover:shadow-glow-lg hover:scale-[1.03] transition-spring">
-              <Github size={18} /> Ver no GitHub
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Obrigado! Avisaremos você no lançamento. 🤟");
+            }}
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6"
+          >
+            <div className="relative flex-1">
+              <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="email"
+                required
+                placeholder="seu@email.com"
+                className="w-full pl-12 pr-4 py-4 rounded-2xl glass text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-smooth"
+              />
+            </div>
+            <button
+              type="submit"
+              className="group inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-7 py-4 rounded-2xl font-semibold shadow-elegant hover:shadow-glow-lg hover:scale-[1.03] transition-spring"
+            >
+              <Bell size={18} /> Avise-me
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-smooth" />
-            </a>
-            <a href="#features" className="inline-flex items-center gap-2 glass px-8 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth">
-              <BookOpen size={18} /> Documentação
-            </a>
-          </div>
+            </button>
+          </form>
+
+          <p className="text-xs text-muted-foreground">
+            Sem spam. Apenas a notícia do lançamento e novidades importantes.
+          </p>
         </div>
       </section>
 
