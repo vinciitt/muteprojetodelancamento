@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    /* MUTE — Deaf Pride turquoise palette (HSL)
-       Cor oficial do movimento surdo internacional (Deaf Awareness Turquoise) */
-    --background: 190 50% 5%;
-    --foreground: 180 100% 96%;
+    /* MUTE — Deaf Pride turquoise + harmonic blue (HSL)
+       Turquesa oficial do movimento surdo, equilibrada com azul para mais harmonia */
+    --background: 205 55% 6%;
+    --foreground: 185 60% 96%;
 
-    --card: 188 55% 9%;
-    --card-foreground: 180 100% 96%;
+    --card: 202 50% 10%;
+    --card-foreground: 185 60% 96%;
 
-    --popover: 188 55% 9%;
-    --popover-foreground: 180 100% 96%;
+    --popover: 202 50% 10%;
+    --popover-foreground: 185 60% 96%;
 
-    --primary: 178 95% 42%;
-    --primary-foreground: 190 80% 6%;
-    --primary-glow: 174 90% 55%;
+    --primary: 182 80% 45%;
+    --primary-foreground: 205 70% 7%;
+    --primary-glow: 188 85% 60%;
 
-    --secondary: 192 100% 45%;
+    --secondary: 210 90% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 165 85% 50%;
-    --accent-foreground: 190 80% 6%;
+    --accent: 195 90% 55%;
+    --accent-foreground: 205 70% 7%;
 
-    --muted: 190 35% 14%;
-    --muted-foreground: 185 25% 72%;
+    --muted: 205 35% 14%;
+    --muted-foreground: 195 25% 72%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 188 40% 18%;
-    --input: 188 40% 18%;
-    --ring: 178 95% 42%;
+    --border: 200 40% 18%;
+    --input: 200 40% 18%;
+    --ring: 182 80% 45%;
 
     --radius: 1rem;
 
     /* Surface tokens */
-    --surface-1: 190 55% 7%;
-    --surface-2: 188 50% 11%;
-    --surface-3: 186 45% 15%;
+    --surface-1: 205 55% 8%;
+    --surface-2: 202 48% 12%;
+    --surface-3: 200 42% 16%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
@@ -66,14 +66,14 @@
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 190 55% 7%;
-    --sidebar-foreground: 180 100% 96%;
-    --sidebar-primary: 178 95% 42%;
-    --sidebar-primary-foreground: 190 80% 6%;
-    --sidebar-accent: 190 35% 14%;
-    --sidebar-accent-foreground: 180 100% 96%;
-    --sidebar-border: 188 40% 18%;
-    --sidebar-ring: 178 95% 42%;
+    --sidebar-background: 205 55% 8%;
+    --sidebar-foreground: 185 60% 96%;
+    --sidebar-primary: 182 80% 45%;
+    --sidebar-primary-foreground: 205 70% 7%;
+    --sidebar-accent: 205 35% 14%;
+    --sidebar-accent-foreground: 185 60% 96%;
+    --sidebar-border: 200 40% 18%;
+    --sidebar-ring: 182 80% 45%;
   }
 }
 
