@@ -379,6 +379,72 @@ const Index = () => {
         </div>
       </header>
 
+      {/* POR QUE ECO? */}
+      <section id="nome" className="relative py-28 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="text-xs font-bold tracking-[0.3em] text-primary-glow uppercase mb-4">A história do nome</div>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
+              Por que <span className="text-gradient-vibrant">ECO</span>?
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+              Um nome curto, simbólico e cheio de significado — escolhido para representar tudo que o app quer ser
+              para a comunidade surda e ouvinte.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
+                <Sparkles className="text-primary-foreground" size={22} />
+              </div>
+              <h3 className="font-display text-xl font-bold mb-3">Voz que se propaga</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Um eco é uma voz que viaja, atravessa barreiras e chega ao outro lado.
+                É exatamente isso que o app faz: leva a fala de quem ouve até quem sinaliza,
+                e os sinais de quem é surdo até quem fala.
+              </p>
+            </div>
+
+            <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
+                <HandHeart className="text-primary-foreground" size={22} />
+              </div>
+              <h3 className="font-display text-xl font-bold mb-3">Resposta da comunidade</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Eco também é resposta — é o sinal que volta, é a conversa que acontece nos dois sentidos.
+                O ECO foi feito <span className="text-foreground font-semibold">com</span> a comunidade surda,
+                não apenas <span className="text-foreground font-semibold">para</span> ela.
+              </p>
+            </div>
+
+            <div className="glass rounded-3xl p-8 hover:border-primary/40 transition-smooth">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center mb-5 shadow-glow">
+                <Globe2 className="text-primary-foreground" size={22} />
+              </div>
+              <h3 className="font-display text-xl font-bold mb-3">Curto, global e acessível</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Três letras fáceis de lembrar, fáceis de pronunciar e que funcionam em qualquer idioma.
+                Acessibilidade começa no nome — simples, claro e direto, como a comunicação deve ser.
+              </p>
+            </div>
+          </div>
+
+          <div className="glass rounded-3xl p-8 md:p-10 text-center border-primary/30">
+            <div className="inline-flex items-center gap-2 mb-4 text-xs font-bold tracking-[0.3em] text-primary-glow uppercase">
+              <Heart size={14} /> O significado
+            </div>
+            <p className="font-display text-2xl md:text-3xl leading-snug max-w-3xl mx-auto">
+              "Toda fala merece um <span className="text-gradient-vibrant">eco</span>.
+              Todo sinal merece uma resposta."
+            </p>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              ECO é a ponte invisível que faz a comunicação ir e voltar — sem barreiras, sem silêncio, sem distância.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROPOSTA */}
       <section id="proposta" className="relative py-28 px-6 bg-gradient-card">
         <div className="max-w-5xl mx-auto">
