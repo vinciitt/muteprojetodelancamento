@@ -304,12 +304,26 @@ const Index = () => {
           </div>
         </div>
 
-        {/* marquee */}
+        {/* marquee — manifesto */}
         <div className="relative mt-24 overflow-hidden glass rounded-2xl py-4">
           <div className="flex gap-12 animate-marquee whitespace-nowrap text-sm font-semibold text-muted-foreground">
-            {[...stack, ...stack].map((s, i) => (
+            {[
+              "Comunicação é direito, não privilégio",
+              "Libras é língua, é cultura, é identidade",
+              "Surdos e ouvintes na mesma conversa",
+              "Acessibilidade não é favor",
+              "Inclusão começa pela escuta — e pelo olhar",
+              "Pontes, não barreiras",
+            ].concat([
+              "Comunicação é direito, não privilégio",
+              "Libras é língua, é cultura, é identidade",
+              "Surdos e ouvintes na mesma conversa",
+              "Acessibilidade não é favor",
+              "Inclusão começa pela escuta — e pelo olhar",
+              "Pontes, não barreiras",
+            ]).map((s, i) => (
               <span key={i} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary-glow" /> {s}
+                <Hand size={14} className="text-primary-glow" /> {s}
               </span>
             ))}
           </div>
