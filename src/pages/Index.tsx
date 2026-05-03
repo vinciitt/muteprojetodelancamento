@@ -202,8 +202,8 @@ const Index = () => {
       </nav>
 
       {/* HERO */}
-      <header className="relative pt-36 pb-24 px-6 scanlines">
-        <div className="absolute inset-0 grid-bg animate-grid-pan pointer-events-none" />
+      <header className="relative pt-36 pb-24 px-6">
+        <div className="absolute inset-0 grid-bg pointer-events-none opacity-60" />
         <div
           className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/30 blur-3xl animate-blob pointer-events-none"
           style={{ transform: `translate(${mouse.x * 30}px, ${mouse.y * 30}px)` }}
