@@ -219,7 +219,7 @@ const Index = () => {
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[88px] font-extrabold leading-[1.02] mb-6">
               Comunicação <br />
-              <span className="text-gradient-vibrant animate-glitch inline-block">sem barreiras</span>
+              <span className="text-gradient-vibrant inline-block">sem barreiras</span>
               <span className="inline-block ml-2 align-middle text-primary-glow animate-float">
                 <Hand size={56} className="inline" />
               </span>
@@ -243,7 +243,7 @@ const Index = () => {
               </a>
               <a
                 href="#avatar"
-                className="inline-flex items-center gap-2 glass px-7 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth hud"
+                className="inline-flex items-center gap-2 glass px-7 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth"
               >
                 <Play size={16} /> Ver demonstração
               </a>
@@ -268,10 +268,9 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-vibrant opacity-20 blur-3xl rounded-full" />
             <div className="relative animate-float">
               <div className="absolute -inset-12 bg-gradient-vibrant opacity-20 blur-3xl rounded-full animate-pulse-glow" />
-              <div className="relative w-[280px] h-[580px] rounded-[42px] glass border-2 p-2 shadow-elegant hud">
-                <div className="w-full h-full rounded-[34px] bg-card overflow-hidden relative scanlines">
+              <div className="relative w-[280px] h-[580px] rounded-[42px] glass border-2 p-2 shadow-elegant">
+                <div className="w-full h-full rounded-[34px] bg-card overflow-hidden relative">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-background rounded-b-2xl z-10" />
-                  <div className="absolute inset-x-0 top-0 h-px animate-data-flow z-20" />
 
                   <div className="px-4 pt-10 pb-20 h-full flex flex-col gap-3">
                     <div className="flex items-center justify-between pb-3 border-b border-border">
