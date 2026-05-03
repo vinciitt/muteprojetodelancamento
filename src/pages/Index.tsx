@@ -202,8 +202,8 @@ const Index = () => {
       </nav>
 
       {/* HERO */}
-      <header className="relative pt-36 pb-24 px-6">
-        <div className="absolute inset-0 grid-bg pointer-events-none" />
+      <header className="relative pt-36 pb-24 px-6 scanlines">
+        <div className="absolute inset-0 grid-bg animate-grid-pan pointer-events-none" />
         <div
           className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/30 blur-3xl animate-blob pointer-events-none"
           style={{ transform: `translate(${mouse.x * 30}px, ${mouse.y * 30}px)` }}
@@ -216,25 +216,36 @@ const Index = () => {
 
         <div className="relative max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
           <div className="text-center lg:text-left animate-fade-up">
-            <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-semibold text-primary-glow mb-7">
-              <Sparkles size={14} className="animate-pulse" />
-              Lançamento oficial · em breve nas lojas
-              <span className="ml-1 px-2 py-0.5 rounded-full bg-primary/30 text-[10px]">2026</span>
+            <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-mono font-semibold text-primary-glow mb-7 hud">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping-slow" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-glow" />
+              </span>
+              <span className="animate-ticker">SYS://DEAF.v0.9</span>
+              <span className="opacity-60">·</span>
+              <span>BOOT 2026</span>
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[88px] font-extrabold leading-[1.02] mb-6">
               Comunicação <br />
-              <span className="text-gradient-vibrant">sem barreiras</span>
+              <span className="text-gradient-vibrant animate-glitch inline-block">sem barreiras</span>
               <span className="inline-block ml-2 align-middle text-primary-glow animate-float">
                 <Hand size={56} className="inline" />
               </span>
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-6 leading-relaxed">
               O DEAF conecta <span className="text-foreground font-semibold">surdos e ouvintes</span> em uma só conversa.
               Avatar tradutor em chamadas, curso de Libras do básico ao avançado, salas de bate-papo
               e aulas com <span className="text-foreground font-semibold">professores surdos</span> — tudo em um só app.
             </p>
+
+            <div className="font-mono text-xs text-primary-glow/90 mb-10 flex flex-wrap gap-x-4 gap-y-1 justify-center lg:justify-start">
+              <span><span className="opacity-60">&gt;</span> avatar.libras <span className="text-primary">[ON]</span></span>
+              <span><span className="opacity-60">&gt;</span> legenda.live <span className="text-primary">[ON]</span></span>
+              <span><span className="opacity-60">&gt;</span> latency <span className="text-primary">~120ms</span></span>
+              <span className="caret"><span className="opacity-60">&gt;</span> ready</span>
+            </div>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
               <a
@@ -247,7 +258,7 @@ const Index = () => {
               </a>
               <a
                 href="#avatar"
-                className="inline-flex items-center gap-2 glass px-7 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth"
+                className="inline-flex items-center gap-2 glass px-7 py-4 rounded-2xl font-semibold hover:border-primary/50 hover:bg-primary/10 transition-smooth hud"
               >
                 <Play size={16} /> Ver demonstração
               </a>
@@ -272,9 +283,10 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-vibrant opacity-20 blur-3xl rounded-full" />
             <div className="relative animate-float">
               <div className="absolute -inset-12 bg-gradient-vibrant opacity-20 blur-3xl rounded-full animate-pulse-glow" />
-              <div className="relative w-[280px] h-[580px] rounded-[42px] glass border-2 p-2 shadow-elegant">
-                <div className="w-full h-full rounded-[34px] bg-card overflow-hidden relative">
+              <div className="relative w-[280px] h-[580px] rounded-[42px] glass border-2 p-2 shadow-elegant hud">
+                <div className="w-full h-full rounded-[34px] bg-card overflow-hidden relative scanlines">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-background rounded-b-2xl z-10" />
+                  <div className="absolute inset-x-0 top-0 h-px animate-data-flow z-20" />
 
                   <div className="px-4 pt-10 pb-20 h-full flex flex-col gap-3">
                     <div className="flex items-center justify-between pb-3 border-b border-border">
