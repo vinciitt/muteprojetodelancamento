@@ -231,12 +231,6 @@ const Index = () => {
               e aulas com <span className="text-foreground font-semibold">professores surdos</span> — tudo em um só app.
             </p>
 
-            <div className="font-mono text-xs text-primary-glow/90 mb-10 flex flex-wrap gap-x-4 gap-y-1 justify-center lg:justify-start">
-              <span><span className="opacity-60">&gt;</span> avatar.libras <span className="text-primary">[ON]</span></span>
-              <span><span className="opacity-60">&gt;</span> legenda.live <span className="text-primary">[ON]</span></span>
-              <span><span className="opacity-60">&gt;</span> latency <span className="text-primary">~120ms</span></span>
-              <span className="caret"><span className="opacity-60">&gt;</span> ready</span>
-            </div>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
               <a
