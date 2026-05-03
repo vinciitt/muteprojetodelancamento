@@ -216,15 +216,6 @@ const Index = () => {
 
         <div className="relative max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
           <div className="text-center lg:text-left animate-fade-up">
-            <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-mono font-semibold text-primary-glow mb-7 hud">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping-slow" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-glow" />
-              </span>
-              <span className="animate-ticker">SYS://DEAF.v0.9</span>
-              <span className="opacity-60">·</span>
-              <span>BOOT 2026</span>
-            </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[88px] font-extrabold leading-[1.02] mb-6">
               Comunicação <br />
@@ -240,12 +231,6 @@ const Index = () => {
               e aulas com <span className="text-foreground font-semibold">professores surdos</span> — tudo em um só app.
             </p>
 
-            <div className="font-mono text-xs text-primary-glow/90 mb-10 flex flex-wrap gap-x-4 gap-y-1 justify-center lg:justify-start">
-              <span><span className="opacity-60">&gt;</span> avatar.libras <span className="text-primary">[ON]</span></span>
-              <span><span className="opacity-60">&gt;</span> legenda.live <span className="text-primary">[ON]</span></span>
-              <span><span className="opacity-60">&gt;</span> latency <span className="text-primary">~120ms</span></span>
-              <span className="caret"><span className="opacity-60">&gt;</span> ready</span>
-            </div>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
               <a
